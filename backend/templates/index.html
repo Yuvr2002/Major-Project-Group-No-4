@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shield Drug AI - Tablet Defect Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container text-center">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Shield Drug AI Logo" class="logo">
+        <h1 class="mb-4">Shield Drug AI</h1>
+        <p class="text-muted">Upload an image of a tablet to detect if it's defective or non-defective.</p>
+
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="form-control mb-3" required>
+            <button type="submit" class="btn btn-primary w-100">Upload & Predict</button>
+        </form>
+    </div>
+
+</body>
+</html>

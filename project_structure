@@ -1,0 +1,16 @@
+tablet_defect_detection/
+│── backend/                 # Flask Backend
+│   ├── app.py               # Flask server
+│   ├── model/               # Trained ML model
+│   │   ├── model.pkl        # Saved model
+│   ├── static/              # CSS & Uploaded Images
+│   ├── templates/           # HTML Files
+│   │   ├── index.html       # Upload page
+│   │   ├── result.html      # Prediction result page
+│   ├── uploads/             # Folder for uploaded images
+│── dataset/                 # Images for training
+│   ├── defective/           # Defective tablet images
+│   ├── non_defective/       # Non-defective tablet images
+│── train_model.py           # Model training script
+│── requirements.txt         # Dependencies
+│── README.md                # Project documentation
