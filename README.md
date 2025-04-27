@@ -1,28 +1,33 @@
-Shield Drug AI - Tablet Defect Detection
-Project Overview
-Shield Drug AI is a web-based application that helps detect whether a pharmaceutical tablet is Defective or Non-Defective. Users can log in, upload tablet images, and receive instant predictions powered by Machine Learning and Computer Vision.
+**Shield Drug AI - Tablet Defect Detection System**
+**Introduction**
+Shield Drug AI is a simple yet powerful web-based system designed to detect whether pharmaceutical tablets are Defective or Non-Defective. By using Machine Learning and Computer Vision techniques, the system ensures quick and accurate quality control for pharmaceutical products.
 
-Features
-User Login and Authentication
+**Objective**
+The main goal of the project is to assist pharmaceutical industries by providing an automated way to verify the quality of tablets based on their visual features. This reduces human errors and improves product safety.
 
-Upload tablet images
+**Features**
+**User Authentication**: Login system to allow users to securely access the platform.
 
-Predict defective or non-defective tablets
+**Tablet Image Upload**: Users can upload tablet images through the web interface.
 
-Display uploaded images alongside results
+**Defect Detection**: The system predicts whether the uploaded tablet is defective or non-defective.
 
-Responsive and simple web interface
+**Result Display**: Uploaded images and prediction results are displayed together.
 
-Technologies Used
-Backend: Python, Flask, Machine Learning (Random Forest Classifier)
+**Simple Interface**: Clean and easy-to-use web interface for smooth user experience.
 
-Frontend: HTML, CSS (Bootstrap), JavaScript
+**Technologies Used**
+**Frontend**: HTML, CSS (Bootstrap), JavaScript
 
-Libraries: OpenCV, NumPy, Scikit-learn, Joblib
+**Backend**: Python, Flask Framework
 
-Tools: Visual Studio Code (VS Code)
+**Machine Learning**: Random Forest Classifier (trained on tablet images)
 
-Project Structure
+**Libraries**: OpenCV, NumPy, Scikit-learn, Joblib
+
+**Tool**: Visual Studio Code (VS Code)
+
+**Project Structure**
 pgsql
 Copy
 Edit
@@ -44,34 +49,18 @@ tablet_defect_detection/
 │── train_model.py
 │── requirements.txt
 │── README.md
-How to Run Locally
-Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/Shield-Drug-AI.git
-Install required packages:
+**How It Works**
+The user logs into the system.
 
-nginx
-Copy
-Edit
-pip install -r requirements.txt
-Train the model if not already done:
+The user uploads an image of a tablet.
 
-nginx
-Copy
-Edit
-python train_model.py
-Start the Flask server:
+The backend model processes the image and predicts its quality.
 
-bash
-Copy
-Edit
-cd backend
-python app.py
-Open your browser and go to http://127.0.0.1:5000/.
+The system displays whether the tablet is "Defective" or "Non-Defective" along with the uploaded image.
 
-Expected Outcome
-Users can log in, upload tablet images, and accurately predict whether the tablet is defective or not, with the result and image displayed clearly on the result page.
+**Industry Use Case**
+This system can be used in the pharmaceutical industry for automated tablet inspection, ensuring that defective tablets are detected early and do not reach customers, thereby improving overall product quality and safety.
 
+**Expected Outcome**
+An easy-to-use web application where users can upload images of tablets and instantly receive defect predictions, helping maintain high standards in pharmaceutical production.
